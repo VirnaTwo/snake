@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Snake</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+
+	<div class="map">
+
+		<svg id="ply" viewBOX="0 0 50 50">
+			<rect x="0" y="0" width="50px" height="50px" fill="green" stroke="black"/>
+
+			<circle r="7" cx="25%" cy="30%"
+			pathLength="1" stroke-width="2"
+			stroke="lightgrey" stroke-dasharray="1" fill="red"/>
+
+			<circle r="7" cx="75%" cy="30%"
+			pathLength="1" stroke-width="2"
+			stroke="lightgrey" stroke-dasharray="1" fill="red"/>
+
+			<rect x="25%" y="75%"
+			width="50%" height="10%"/>
+		</svg>
+
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
