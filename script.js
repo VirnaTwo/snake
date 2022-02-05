@@ -54,26 +54,5 @@ class Entity {
 let Ply = new Entity()
 setInterval(() => {	Ply.Moveing(1);
 					Ply.CheckBorderLimite();}, 100)
+
 document.body.onkeydown = (event) => {Ply.ChangeSens(event)}
-
-/*
-
-function Move(event, speed=1) {
-
-	if (event['key']=="ArrowRight") {
-		ply.left = `${GetNumFromPercent(ply.left)+speed}%`
-	}
-	else if (event['key']=="ArrowLeft") {
-		ply.left = `${GetNumFromPercent(ply.left)-speed}%`
-	}
-
-	if (event['key']=="ArrowDown") {
-		ply.top = `${GetNumFromPercent(ply.top)+speed}%`
-	}
-	else if (event['key']=="ArrowUp") {
-		ply.top = `${GetNumFromPercent(ply.top)-speed}%`
-	}
-}
-
-document.body.onkeydown = (event) => {ply.moveing(event)}
-*/
